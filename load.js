@@ -4,8 +4,7 @@ fetch(url).then(response => response.json())
 	let selectEl = document.getElementById('make-select');
 	let selectElMod = document.getElementById('model-select');
 
-	if(response.ok){
-		//let json = await response.json();	
+			//let json = await response.json();	
 		for(let id of Object.getOwnPropertyNames(json))
 		{
 			let maker = json[id];
@@ -39,8 +38,6 @@ fetch(url).then(response => response.json())
 
 		})
 		
-	}
-	else{
-		alert("Error HTTP!");
-	}	
+	
+		
 })
